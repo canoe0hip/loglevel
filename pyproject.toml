@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "canoe0hip-loglevel"
+version = "0.1.0"
+description = "解析时间标记，排列日志的级别语义的发生顺序，标出间隔异常与逆序事件"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "canoe0hip" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://canoe0hip.github.io"
+Repository = "https://github.com/canoe0hip/loglevel"
+Issues = "https://github.com/canoe0hip/loglevel/issues"
+
+[project.scripts]
+loglevel = "loglevel:main"
+
+[tool.setuptools]
+py-modules = ["loglevel"]
